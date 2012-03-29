@@ -1,0 +1,28 @@
+{
+  "name": "localize.io",
+  "preferGlobal": "false",
+  "version": "0.4.0",
+  "author": "Bertrand Tornil <bertand.tornil@gmail.com>",
+  "description": "Ultra simple localization service",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bobuss/localize.io.git"
+  },
+  "scripts" : {
+    "start": "node app.js",
+    "test": "node test/"
+  },
+  "repository": {},
+  "keywords": [
+    "geoip"
+  ],
+  "dependencies": {
+    "connect": "2.0.x",
+    "config": "0.4.x",
+    "geoip": "0.4.x"
+  },
+  "licence": "MIT",
+  "engine": {
+    "node": ">=0.6"
+  }
+}
