@@ -15,8 +15,8 @@ Installation
 - Install dependancies: `npm install`
 - Install the MaxMind-s GeoIP database
 
-	$ cd data && wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
-	$ gunzip GeoLiteCity.dat.gz && cd ..
+		$ cd data && wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
+		$ gunzip GeoLiteCity.dat.gz && cd ..
 
 - Optionaly adapt the configuration by editing `config/default.yaml`
 - Start the server: `node app.js`
