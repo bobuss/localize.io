@@ -19,7 +19,7 @@ Installation
 		$ gunzip GeoLiteCity.dat.gz && cd ..
 
 - Optionaly adapt the configuration by editing `config/default.yaml`
-- Start the server: `node app.js`
+- Start the server: `node server.js`
 
 Try it
 ======

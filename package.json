@@ -9,8 +9,7 @@
     "url": "git://github.com/bobuss/localize.io.git"
   },
   "scripts" : {
-    "start": "node app.js",
-    "test": "node test/"
+    "start": "node server.js"
   },
   "repository": {},
   "keywords": [

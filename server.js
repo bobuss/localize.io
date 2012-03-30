@@ -54,6 +54,14 @@ var server = connect()
 
     }
 
-  }).listen(config.http_port);
+  });
 
-console.log('Server running on port : ' + config.http_port);
+if (!module.parent) {
+  // this is the main module
+  server.listen(config.http_port);
+  console.log('Server running on port : ' + config.http_port);
+} else {
+  module.exports = server;
+}
+
+
