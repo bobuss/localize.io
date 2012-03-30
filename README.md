@@ -3,12 +3,9 @@ Localize.io
 
 Ultra simple geoip service
 
-- GET /X.X.X.X
-- responds a json with the localization informations.
-
 
 Installation
-============
+------------
 
 - Install [node.js](http://nodejs.org/) and [npm](http://npmjs.org/).
 - Clone the repository: `git clone git://github.com/bobuss/localize.io.git && cd localize.io`
@@ -22,7 +19,7 @@ Installation
 - Start the server: `node server.js`
 
 Try it
-======
+------
 
 You can test it with a browser or with curl
 
@@ -73,7 +70,7 @@ Finaly, a last case is provided if you mispealed the IP in the URI, by send us a
 	No IP address found in the URI.
 
 License
-=======
+-------
 
 (The MIT License)
 
