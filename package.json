@@ -1,7 +1,7 @@
 {
   "name": "localize.io",
   "preferGlobal": "false",
-  "version": "0.4.0",
+  "version": "0.1.0",
   "author": "Bertrand Tornil <bertand.tornil@gmail.com>",
   "description": "Ultra simple localization service",
   "repository": {
