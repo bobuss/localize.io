@@ -16,6 +16,7 @@
     "geoip"
   ],
   "dependencies": {
+    "yaml": "0.2.x",
     "connect": "2.0.x",
     "config": "0.4.x",
     "geoip": "0.4.x"

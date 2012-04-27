@@ -9,6 +9,7 @@ Installation
 
 - Install [node.js](http://nodejs.org/) and [npm](http://npmjs.org/).
 - Clone the repository: `git clone git://github.com/bobuss/localize.io.git && cd localize.io`
+- Install the geoIP library: `brew install geoip`
 - Install dependancies: `npm install`
 - Install the MaxMind-s GeoIP database
 
@@ -28,7 +29,7 @@ You can test it with a browser or with curl
 The server will response a 200 with a json
 
 	HTTP/1.1 200 OK
-	Content-Type: text/plain
+	Content-Type: application/json
 	Connection: keep-alive
 	Transfer-Encoding: chunked
 
@@ -52,22 +53,22 @@ In case the given IP does not find a localization, the server will response a 40
 	$ curl -i http://localhost:8130/127.0.0.1
 
 	HTTP/1.1 404 Not Found
-	Content-Type: text/plain
+	Content-Type: application/json
 	Connection: keep-alive
 	Transfer-Encoding: chunked
 
-	No localization found.
+	{"message":"No localization found."}
 
 Finaly, a last case is provided if you mispealed the IP in the URI, by send us a 400
 
 	$ curl -i  http://localhost:8130/127.0.0
 
 	HTTP/1.1 400 Bad Request
-	Content-Type: text/plain
+	Content-Type: application/json
 	Connection: keep-alive
 	Transfer-Encoding: chunked
 
-	No IP address found in the URI.
+	{"message":"No IP address found in the URI."}
 
 License
 -------
